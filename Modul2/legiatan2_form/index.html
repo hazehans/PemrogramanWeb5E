@@ -1,0 +1,66 @@
+    <DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+            <title>FORM BARU</title>
+            
+
+            <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+            <link rel="stylesheet" href="this.css">
+        </head>
+        
+        <body>
+            <div class="container">
+                <h1> HI!!! </h1>
+
+                <p>input ur data here : </p>
+                <form>
+                    <p>
+                        <label for = "name">First Name </label>
+                        <input type="text" id="name"/>
+                        <br>
+                    </p>
+                    <p>
+                        <label for = "last">Last Name : </label>
+                        <input type="text" id="last"/>
+                        <br>
+                    </p>
+                    <p>
+                        <label for = "NIM">NIM : </label>
+                        <input type="number" id="NIM">
+                        <br>
+                    </p>
+                    <p>
+                        <br>
+                        <label for = "Address">Address : </label>
+                        <input type="text" id="Address">
+                        <br>
+                    </p>
+                    <p>
+                        <button size="20px" onclick="submitForm()">Submit</button>
+                    </p>  
+                </form>
+            </div>
+
+            <script>
+    
+    function submitForm() {
+            let name = document.getElementById("name").value;
+            let last = document.getElementById("last").value;
+            let NIM = document.getElementById("NIM").value;
+            let Address = document.getElementById("Address").value;
+
+            if (name === "" || last === "" || NIM === "" || Address === "") {
+                alert("Semua form harus diisi");
+            } else {
+                alert("Jawaban sudah tersimpan");
+            }
+        }
+            </script>
+            
+        </body>
+        
+        </html>

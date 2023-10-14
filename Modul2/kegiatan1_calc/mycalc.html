@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-widh, initial-scale=1.0">
+    <title>Penjumlahan simple</title>
+</head>
+
+<body>
+    <h1>Penjumlahan</h1>
+    <form>
+        <label for="input1">Input ur num</label>
+        <input type="number" id="input1">
+        <label for="input2">Input ur num</label>
+        <input type="number" id="input2">
+        <br>
+
+        <button onclick="plus()">Sum</button>
+        <button onclick="try_again()">Try again</button>
+    </form>
+
+    <script>
+        // js
+        function plus () {
+            let input1 = 
+            parseFloat(document.getElementById("input1").value);
+    
+            let input2 = 
+            parseFloat(document.getElementById("input2").value);
+
+            let result = input1 + input2;
+
+            alert("Result = " + result);
+        }
+
+        function try_again() {
+            document.getElementById("input1").value="";
+            document.getElementById("input2").value="";
+        }
+    </script>
+</body>
+
+</html>
